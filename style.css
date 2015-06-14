@@ -1,0 +1,269 @@
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.full-background {
+  height: 100%;
+  width: 100%;
+  position:absolute;
+}
+
+.full-background-extended {
+  height:101%;
+  width:101%;
+  margin-left:-1%;
+  margin-right:-1%;
+  position:relative;
+  margin: 0;
+}
+
+
+#everything, body {
+  background-color: #51c7a8;
+}
+
+#everything {
+  height:100%;
+  width:100%;
+}
+
+#header-main-outer {
+  height:500px;
+  width:100%;
+  background-color: #39ac8e;
+}
+
+#header-top-outer {
+  width:100%;
+  height:100px;
+  background-color: black;
+  margin: 0;
+}
+
+.header-top-div-sub {
+  width:30%;
+  display:inline-block;
+  position:relative;
+  margin:0;
+  height:100%;
+  text-align:center;
+}
+
+.header-top-div-main {
+  width:39%;
+  display:inline-block;
+  position:relative;
+  margin:0;
+  height:100%;
+  text-align:center;
+}
+
+.logo-main {
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  height:100%;
+  width:auto;
+  opacity: 0.75;
+  transition: opacity 0.25s;
+  -webkit-transition: opacity 0.25s;
+}
+
+.logo-main:hover {
+  opacity: 1;
+}
+
+* {
+  font-family:helvetica;
+}
+
+.main-header-link {
+  height:80%;
+  width:80%;
+  position: absolute;
+  line-height:80px;
+  vertical-align: middle;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #14382e;
+  text-align:center;
+  border-radius: 10px;
+}
+
+.main-header-link a {
+  vertical-align: middle;
+  font-size: 50px;
+  text-align:center;
+  color: #51c7a8;
+  font-weight:900;
+  text-decoration:none;
+}
+
+#carousel-outer {
+  height: 400px;
+  width: 100%;
+}
+
+#carousel-image-background {
+  background-image: url('res/images/car1.jpg');
+  background-position: 50% -150px;
+  background-size: auto 200%;
+  transform: scaleY(-1);
+  height: 600px;
+  width: 100%;
+  position:absolute;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+#carousel-text-background {
+  height:100%;
+  width: 100%;
+}
+
+#carousel-text-div {
+  height:300px;
+  width:400px;
+  border-bottom-left-radius: 300px;
+  float:right;
+  position:relative;
+  text-align:right;
+  color: white;
+  background-color: rgba(20, 56, 46, 0.8);
+  transition: border-bottom-left-radius 0.25s;
+  -webkit-transition: border-bottom-left-radius 0.25s;
+}
+
+#carousel-text-div.unactive {
+  border-bottom-left-radius: 0px;
+}
+
+#carousel-text-div h1 {
+  font-size:100px;
+  margin: 0;
+  color: #51c7a8;
+}
+
+#carousel-buttons {
+  margin-top: 500px;
+  border-radius: 50px;
+  height: 50px;
+  width:200px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: rgba(20, 56, 46, 0.2);
+  text-align:center;
+  transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+}
+
+#carousel-buttons p {
+  font-size: 50px;
+  color:white;
+  cursor: pointer;
+}
+
+#carousel-buttons span {
+  opacity: 0.5;
+  font-weight: 500;
+  transition: opacity 0.25s;
+  -webkit-transition: opacity 0.25s;
+}
+
+#carousel-buttons span:hover {
+  opacity: 1;
+}
+
+.selected {
+  opacity: 1 !important;
+}
+
+#carousel-buttons:hover {
+  background-color: rgba(20, 56, 46, 0.5);
+}
+
+
+#header-top {
+  width:100%;
+  height:25px;
+  line-height: 25px;
+  vertical-align: middle;
+  margin: 0;
+  background-color: #14382e;
+  margin-top: 200px;
+  position:relative;
+  text-align:center;
+}
+
+#header-top a, p {
+  margin: 0;
+  display:inline-block;
+  font-size: 15px;
+  vertical-align: middle;
+  font-weight:100;
+  color: #51c7a8;
+  opacity: 0.75;
+  text-decoration: none;
+  transition: opacity 0.25s;
+  -webkit-transition: opacity 0.25s;
+}
+
+.outer-link {
+  margin: 0;
+  height:100%;
+  width:15%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color:transparent;
+  display:inline-block;
+  transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+}
+
+.outer-link-static {
+  border-radius: 30px;
+}
+
+.outer-link:hover {
+  background-color:#215e4e;
+}
+
+#header-top a:hover {
+  opacity: 1;
+}
+
+.dropdown {
+  width:15%;
+  position:absolute;
+  pointer-events:none;
+  opacity: 0;
+  margin-top:-1px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align:left;
+  background-color:#215e4e;
+  transition: opacity 0.25s;
+  -webkit-transition: opacity 0.25s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  padding-left:5px;
+}
+
+.dropdown.shown {
+  opacity: 1;
+  pointer-events:auto;
+}
+
+.dropdown a {
+  font-size: 20px;
+}
+
+body:after {
+  display:none;
+  content: url('res/images/car2.jpg') url('res/images/car3.jpg');
+}
