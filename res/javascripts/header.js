@@ -5,6 +5,7 @@ $(document).ready(function() {
   $( window ).scroll(function() {
     var scroll = $(window).scrollTop();
     $('#carousel-image-background').css("background-position-y", (-(Math.floor(scroll/5))-150)+"px");
+    $('.intro-image-header').css("background-position-y", ((Math.floor(scroll/5)))+"px");
     if(scroll >= 100) {
       if(headerFixed === false) {
         headerFixed = true;
@@ -84,3 +85,19 @@ $(document).ready(function() {
   });
   setTimeout(function() {$('.intro-image-header').css("background-image", "url('"+dots+"res/images/inspirational/i"+number+".jpg')");}, 10);
 })
+
+
+$(function() { // Smooth scrolling with the pages with the hashtag stuff. Idk why it works.
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
