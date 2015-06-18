@@ -4,9 +4,55 @@
   <link rel="icon" href="../../favicon.ico" type="image/x-icon"/>
   <link type="text/css" rel="stylesheet" href="../../res/stylesheets/style.css"/>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
   <script language="javascript" type="text/javascript" src="../../lib/jqueryui.js"></script>
   <script language="javascript" type="text/javascript" src="../../res/javascripts/header.js"></script>
-  <title>History</title>
+  <!--Google Map Generation-->
+  <script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(40.016341, -105.236260),
+    zoom:17,
+    mapTypeId:google.maps.MapTypeId.HYBRID
+  };
+  var map=new google.maps.Map(document.getElementById("foothills-map"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script>
+function initialize() {
+var mapProp = {
+  center:new google.maps.LatLng(39.986663, -105.102546),
+  zoom:18,
+  mapTypeId:google.maps.MapTypeId.HYBRID
+};
+var map=new google.maps.Map(document.getElementById("community-map"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script>
+function initialize() {
+var mapProp = {
+  center:new google.maps.LatLng(39.923664, -105.086983),
+  zoom:18,
+  mapTypeId:google.maps.MapTypeId.HYBRID
+};
+var map=new google.maps.Map(document.getElementById("medical-map"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script>
+function initialize() {
+var mapProp = {
+  center:new google.maps.LatLng(40.026376, -105.281362),
+  zoom:18,
+  mapTypeId:google.maps.MapTypeId.HYBRID
+};
+var map=new google.maps.Map(document.getElementById("boulder-map"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+  <title>Hospitals/Clinics</title>
 </head>
 <body>
   <div id="everything" class="full-background-extended">
@@ -83,8 +129,88 @@
       </div>
     <div id="actual-content">
       <div id="intro-image3" class="full-width intro-image intro-image-right intro-image-header" style="background-image: url('../../res/images/inspirational/i5.jpg'); background-position: 50% 0px;">
-        <div class="intro-text-div"  >
+        <div class="intro-text-div">
           <h1>Hospitals/Clinics</h1>
+        </div>
+      </div>
+      <div id="content-outer">
+        <div id="content-left">
+          <h3>Jump to:</h3>
+          <ul id="left-nav">
+            <li><a href="#foothills"><div class="nav-link"><p>Foothills</p></div></a></li>
+            <li><a href="#community"><div class="nav-link"><p>Community</p></div></a></li>
+            <li><a href="#medical"><div class="nav-link"><p>Medical Imaging</p></div></a></li>
+            <li><a href="#boulder"><div class="nav-link"><p>Boulder</p></div></a></li>
+          </ul>
+        </div>
+        <div id="content-right" style="height: auto">
+          <h2 id="foothills">Boulder Community Health Foothills Campus</h2>
+          <div class="split">
+            <div class="split-left split-even">
+              <p class="address">4747 Arapahoe Ave<br>Boulder, CO 80303<br>303-415-7500<br>303-440-2170</p>
+            </div>
+            <div class="split-right split-even">
+              <img src="../../res/images/inspirational/i3.jpg" class="split-even-img"/>
+            </div>
+          </div>
+          <div class="hr hr-huge margin-top-hr">
+            <p>Boulder Community Health Foothills Campus Map</p>
+          </div>
+          <div class="map-outer">
+            <div class="map" id="foothills-map"></div>
+          </div>
+          <div class="hr margin-bottom-hr"></div>
+          <div class="hr mini-hr margin-hr"></div>
+          <h2 id="community">Community Medical Center</h2>
+          <div class="split">
+            <div class="split-left split-even">
+              <p class="address">1000 W South Boulder Rd<br>Lafayette, CO 80026<br>303-666-4357</p>
+            </div>
+            <div class="split-right split-even">
+              <img src="../../res/images/inspirational/i7.jpg" class="split-even-img"/>
+            </div>
+          </div>
+          <div class="hr hr-huge margin-top-hr">
+            <p>Community Medical Center Map</p>
+          </div>
+          <div class="map-outer">
+            <div class="map" id="community-map"></div>
+          </div>
+          <div class="hr margin-bottom-hr"></div>
+          <div class="hr mini-hr margin-hr"></div>
+          <h2 id="medical">Medical Imaging Center</h2>
+          <div class="split">
+            <div class="split-left split-even">
+              <p class="address">36 Garden Center<br>Broomfield, CO 80020<br>303-938-5238<br>303-466-1234</p>
+            </div>
+            <div class="split-right split-even">
+              <img src="../../res/images/inspirational/i1.jpg" class="split-even-img"/>
+            </div>
+          </div>
+          <div class="hr hr-huge margin-top-hr">
+            <p>Medical Imaging Center Map</p>
+          </div>
+          <div class="map-outer">
+            <div class="map" id="medical-map"></div>
+          </div>
+          <div class="hr margin-bottom-hr"></div>
+          <div class="hr mini-hr margin-hr"></div>
+          <h2 id="boulder">Boulder Medical Center</h2>
+          <div class="split">
+            <div class="split-left split-even">
+              <p class="address">2750 Broadway<br>Boulder, CO 80304<br>303-440-3000<br>303-440-3029</p>
+            </div>
+            <div class="split-right split-even">
+              <img src="../../res/images/inspirational/i1.jpg" class="split-even-img"/>
+            </div>
+          </div>
+          <div class="hr hr-huge margin-top-hr">
+            <p>Boulder Medical Center Map</p>
+          </div>
+          <div class="map-outer">
+            <div class="map" id="boulder-map"></div>
+          </div>
+          <div class="hr margin-bottom-hr"></div>
         </div>
       </div>
     </div>
