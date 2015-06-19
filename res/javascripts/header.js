@@ -1,25 +1,26 @@
 headerFixed = false;
 var dots = "../../";
 $(document).ready(function() {
+  $('.intro-image-header').css("background-position-y", "-50px");
   var number = Math.floor(Math.random()*12);
   $( window ).scroll(function() {
     var scroll = $(window).scrollTop();
     $('#carousel-image-background').css("background-position-y", (-(Math.floor(scroll/5))-150)+"px");
-    $('.intro-image-header').css("background-position-y", ((Math.floor(scroll/5)))+"px");
+    $('.intro-image-header').css("background-position-y", ((Math.floor(scroll/5))-50)+"px");
     if(scroll >= 100) {
       if(headerFixed === false) {
         headerFixed = true;
         $('#header-top').addClass('fixed');
-        $('#hr1').css("margin-top", "200px");
-        window.scrollTo(0, 75);
+        // $('#hr1').css("margin-top", "200px");
+        // window.scrollTo(0, 75);
       };
     }
     if(scroll < 75) {
       if(headerFixed) {
         headerFixed = false;
         $('#header-top').removeClass('fixed');
-        $('#hr1').css("margin-top", "225px");
-        window.scrollTo(0, 100);
+        // $('#hr1').css("margin-top", "225px");
+        // window.scrollTo(0, 100);
       }
     }
   })
