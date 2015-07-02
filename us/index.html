@@ -3,11 +3,14 @@
 <head>
   <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
   <link type="text/css" rel="stylesheet" href="../res/stylesheets/style.css"/>
+  <link type="text/css" rel="stylesheet" href="style.css"/>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script language="javascript" type="text/javascript" src="../lib/jqueryui.js"></script>
   <script language="javascript" type="text/javascript" src="../res/javascripts/header.js"></script>
+  <script language="javascript" type="text/javascript" src="rads.js"></script>
   <script>
   dots = "../";
+  var number = Math.floor(Math.random()*37);
   $('.intro-image-header').css("background-image", "url('"+dots+"res/images/inspirational/i"+number+".jpg')");
   </script>
   <title>History</title>
@@ -37,7 +40,7 @@
           <div id="about-dropdown" class="dropdown">
             <ul>
               <li><div class='dropdown-link'><a href='../about/history/index.html'>History</a></div></li>
-              <li><div class='dropdown-link dropdown-selected'><a href='../about/hospitals/index.html'>Hospitals/Clinics</a></div></li>
+              <li><div class='dropdown-link'><a href='../about/hospitals/index.html'>Hospitals/Clinics</a></div></li>
               <li><div class='dropdown-link'><a href='../about/whatsaradiologist/index.html'>What's a Radiologist?</a></div></li>
             </ul>
           </div>
@@ -91,6 +94,47 @@
       <div id="intro-image3" class="full-width intro-image intro-image-right intro-image-header" style="background-image: url('../res/images/inspirational/i5.jpg'); background-position: 50% 0px;">
         <div class="intro-text-div">
           <h1>Our Radiologists</h1>
+        </div>
+      </div>
+    </div>
+    <div id="content-outer">
+      <div id="content-left" class="content-left-us" style="overflow-x: visible">
+        <h3>Radiologists</h3>
+        <ul id="left-nav" class="left-nav-us" style="overflow-x: visible">
+          <li><a href="#anchor-ignore"><div class="nav-link selected" id="link-0"><p>Matthew H. Blomquist, MD</p><div class="photo-preview" id="pp-0"></div></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-1"><p>Charles Bowles, MD</p><div class="photo-preview" id="pp-1"></div></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-2"><p>Richard Finer, MD</p><div class="photo-preview" id="pp-2"></div></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-3"><p>Robert E. Helgans, MD</p><div class="photo-preview" id="pp-3"></div></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-4"><p>Gustavo L. Isuani, MD</p><div class="photo-preview" id="pp-4"></div></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-5"><p>Paul D. King, MD</p><div class="photo-preview" id="pp-5"></div></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-6"><p>Jie Mao, MD</p><div class="photo-preview" id="pp-6"></div></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-7"><p>Jason A. Mehling, MD, MHA</p><div class="photo-preview" id="pp-7"></div></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-8"><p>Roger D. Nichols, MD</p><div class="photo-preview" id="pp-8"></div></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-9"><p>Christopher A. Nusser, MD</p><div class="photo-preview" id="pp-9"></div></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-10"><p>David A. Oppenheimer, MD</p><div class="photo-preview" id="pp-10"></div></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-11"><p>Nicholas Wickersham, MD</p><div class="photo-preview" id="pp-11"></div></div></a></li>
+        </ul>
+      </div>
+      <div id="content-right" class="content-right-us">
+        <div id="right-background-image" class="full-background background-image"></div>
+        <div id="anchor-ignore"></div>
+        <div id="right-content" class="full-background">
+          <div class="split" style="width: 90%; margin-left:auto;margin-right:auto;margin-top:10px;display:block">
+            <div class="split-left split-super-minor">
+              <div id="profile-image-main" class="background-image split-minor-img"></div>
+            </div>
+            <div class="split-right split-super-major">
+              <h4 id="name-title">Noah S. Finer, MD</h4>
+              <div class="hr mini-hr"></div>
+              <p id="bio">faewoijaioewoi uafwehoiuafewhos dfiuhaew</p>
+            </div>
+          </div>
+          <p class="info-p" id="college-p"><span class="info-fixed">College: </span>poop university</p>
+          <p class="info-p" id="medschool-p"><span class="info-fixed">Medical School: </span>poop university of medicine</p>
+          <p class="info-p" id="internship-p"><span class="info-fixed">Internship: </span>poop hospital of medicine</p>
+          <p class="info-p" id="residency-p"><span class="info-fixed">Residency: </span>stanford lol</p>
+          <p class="info-p" id="fellowship-p"><span class="info-fixed">Fellowship: </span>in ur mom</p>
+          <p class="info-p" id="aoi-p"><span class="info-fixed">Areas of Interest: </span>ur mom</p>
         </div>
       </div>
     </div>
