@@ -51,6 +51,14 @@ a {
   height: 2px;
 }
 
+.super-mini-hr {
+  height: 1px;
+  width: 60%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .margin-hr {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -339,6 +347,11 @@ h2:first-child {
   vertical-align: bottom;
 }
 
+.split-super-major {
+  width: 80%;
+  vertical-align: bottom;
+}
+
 .split-major-ish {
   width: 60%;
   vertical-align: bottom;
@@ -359,6 +372,12 @@ h2:first-child {
 
 .split-minor-ish {
   width: 39%;
+  vertical-align: bottom;
+  line-height: 200px;
+}
+
+.split-super-minor {
+  width: 19%;
   vertical-align: bottom;
   line-height: 200px;
 }
@@ -394,7 +413,7 @@ h2:first-child {
   vertical-align: middle;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link.selected {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -530,8 +549,8 @@ h3 {
   background-image: url('res/images/car1.jpg');
   background-position: 50% -150px;
   background-size: auto 200%;
-  transform: scaleY(-1);
-  -webkit-transform: scaleY(-1);
+  /*transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);*/
   height: 600px;
   width: 100%;
   position:absolute;

@@ -2,7 +2,7 @@ headerFixed = false;
 var dots = "../../";
 $(document).ready(function() {
   $('.intro-image-header').css("background-position-y", "-50px");
-  var number = Math.floor(Math.random()*12);
+  var number = Math.floor(Math.random()*37);
   $( window ).scroll(function() {
     var scroll = $(window).scrollTop();
     $('#carousel-image-background').css("background-position-y", (-(Math.floor(scroll/5))-150)+"px");
