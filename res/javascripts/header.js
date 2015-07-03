@@ -5,8 +5,8 @@ $(document).ready(function() {
   var number = Math.floor(Math.random()*37);
   $( window ).scroll(function() {
     var scroll = $(window).scrollTop();
-    $('#carousel-image-background').css("background-position-y", (-(Math.floor(scroll/5))-150)+"px");
-    $('.intro-image-header').css("background-position-y", ((Math.floor(scroll/5))-50)+"px");
+    $('#carousel-image-background').css("background-position-y", ((Math.floor(scroll/2))-150)+"px");
+    $('.intro-image-header').css("background-position-y", ((Math.floor(scroll/2))-50)+"px");
     if(scroll >= 100) {
       if(headerFixed === false) {
         headerFixed = true;

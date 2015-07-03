@@ -20,6 +20,12 @@
   font-weight: 500 !important;
 }
 
+@media screen and (max-width: 1000px) {
+  .left-nav-us p {
+    font-size: 10px !important;
+  }
+}
+
 .photo-preview {
   display:block;
   pointer-events:none;

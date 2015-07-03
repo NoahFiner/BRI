@@ -203,10 +203,13 @@ setInfo = function(num) {
   }
 }
 
-
+var hidePhotos;
 $(document).ready(function() {
   $('.nav-link').hover(function() {
+    clearTimeout(hidePhotos);
     $(this).children().addClass("visible");
+    var that = this;
+    hidePhotos = setTimeout(function() {$(that).children().removeClass("visible")}, 2000);
   }, function() {
     $(this).children().removeClass("visible");
   });
