@@ -199,6 +199,20 @@ a {
   position: relative;
 }
 
+@media screen and (max-width: 1100px) {
+  #left-nav p {
+    font-size: 10px !important;
+  }
+  .split p {
+    font-size: 10px !important;
+  }
+  .split img {
+    width: 95% !important;
+    height: auto !important;
+    vertical-align: middle !important;
+  }
+}
+
 #left-nav p {
   color: #2d846e;
   font-size: 20px;
