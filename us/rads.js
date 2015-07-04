@@ -46,7 +46,7 @@ var r2 = new Rad(2, "Richard Finer, MD",
 "Alton Ochnser Medical Foundation Hospital in New Orleans",
 "Alton Ochnser Medical Foundation Hospital in New Orleans",
 "Body imaging, including CT/MRI/Ultrasound at the University of California, Irvine",
-"Interests include CT, MRI and ultrasound along with women's imaging. e has extra experience in image-guided biopsies and drainage procedures using CT and ultrasound. He is the head of CT imaging.",
+"Interests include CT, MRI and ultrasound along with women's imaging. He has extra experience in image-guided biopsies and drainage procedures using CT and ultrasound. He is the head of CT imaging.",
 "Outside of work Dr. Finer enjoys biking, hiking, snowboarding, tennis, and spending time with his wife and son." //TODO: make less crappy
 );
 
@@ -82,14 +82,13 @@ var r4 = new Rad(4, "Gustavo L. Isuani, MD",
 var r5 = new Rad(5, "Paul D. King, MD",
 "images/r51.jpg",
 "images/r52.jpg",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-""); //TODO: get this dude's bio and stuff
+"University of Colorado",
+"University of Colorado Health Sciences",
+"Presbyterian Denver Hospital",
+"Presbyterian Denver Hospital",
+"Neuroradiology fellowship at Strong Memorial Hospital, Rochester NY",
+"Neuroradiology, woman's imaging, and general diagnostic radiology.",
+"Dr. King, outside of work, enjoys travelling and outdoor activities."); //TODO: spam this dude with emails to get his bio
 
 //#6 Jie Mao, MD
 var r6 = new Rad(6, "Jie Mao, MD",
@@ -99,7 +98,7 @@ var r6 = new Rad(6, "Jie Mao, MD",
 "University of Florida",
 "University of Colorado Health Sciences Center in general surgery",
 "University of Colorado Health Sciences Center",
-"University of Colorado Health Sciences Center in vascular and interventional radiology",
+"University of Colorado Health Sciences Center in Vascular and Interventional Radiology",
 "Interest are in noninvasive vascular imaging, uterine fibroid embolization for the treatment of symptomatic fibroids and endovascular graft placement for the treatment of abdominal aortic aneurysms, treating cancer in the liver with chemoembolization and performing minimally invasive breast biopsy, and talking with patients about interventional radiology procedures that may serve as an alternative to more invasive treatments.",
 "Dr. Mao is married to Dr. David Gatof, who is a practicing member of Gastroenterology of the Rockies.  They both love the community of Boulder, and enjoy many outdoor activities such as biking, camping, hiking, and skiing.");
 
@@ -166,7 +165,7 @@ var r11 = new Rad(11, "Nicholas Wickersham, MD",
 "",
 "",
 "",
-""); //TODO: spam this dude with emails to get his bio
+""); //TODO: get this dude's bio and stuff
 
 var rads = [r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11];
 
