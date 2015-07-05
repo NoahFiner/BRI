@@ -22,7 +22,7 @@ var r0 = new Rad(0, "Matthew H. Blomquist, MD",
 "Pennsylvania State University Hospital",
 "Body Imaging fellowship at University of Colorado School of Medicine",
 "General Radiology with an interest in body imaging.",
-"Dr. Blomquist is married to his beautiful and loving wife Ashley, and his interests outside of work include mountain biking, hiking, golfing, alpine skiing, and otherwise enjoying the beauty of the Colorado outdoors.");
+"Dr. Blomquist is married to his beautiful wife Ashley and blessed with three lovely children.  He enjoys family time and the beauty of everything Colorado has to offer.  He tries to fit in time to get on his mountain bike, hike, golf and ski.");
 
 //#1: Charles Bowles, MD
 var r1 = new Rad(1, "Charles Bowles, MD",
@@ -34,7 +34,7 @@ var r1 = new Rad(1, "Charles Bowles, MD",
 "University of Colorado Heatlh Sciences Center",
 "Cardiovascular and interventional radiology at Stanford University Hospital",
 "Interests include treatment of varicose veins (RF, laser), vertebroplasty or kyphoplasty for compression fractures, uterine fibroid embolization, and percutaneous image-guided ablation of tumors.",
-"Dr. Bowles has two children and enjoys skiing, bicycling, camping, rafting and kayaking. Dr. Bowles is a part-time jazz musician who has been advised to keep his day job.");
+"Dr. Bowles cannot get enough of the outdoors.  He loves spending time with his two kids and on his days off you will most often find him skiing, bicycling, camping, rafting or kayaking. He is a part-time jazz musician who has been advised to keep his day job.");
 
 
 //#2 Richard Finer, MD
@@ -47,7 +47,7 @@ var r2 = new Rad(2, "Richard Finer, MD",
 "Alton Ochnser Medical Foundation Hospital in New Orleans",
 "Body imaging, including CT/MRI/Ultrasound at the University of California, Irvine",
 "Interests include CT, MRI and ultrasound along with women's imaging. He has extra experience in image-guided biopsies and drainage procedures using CT and ultrasound. He is the head of CT imaging.",
-"Outside of work Dr. Finer enjoys biking, hiking, snowboarding, tennis, and spending time with his wife and son." //TODO: make less crappy
+"There is so much about Boulder that Dr. Finer appreciates.  Time with his wife and son biking and hiking in the mountains, snowboarding, and soaking up so many more days of sunshine than he ever experienced growing up in the midwest."
 );
 
 
@@ -61,7 +61,7 @@ var r3 = new Rad(3, "Robert E. Helgans, MD",
 "University of Colorado Health Science Center",
 "Body imaging at University of Colorado Health Science Center",
 "Oncologic and transplant imaging, with an ephasis on liver MRI and CT-guided procedures. He is head of ultrasound.",
-"Dr. Helgans is an American College of Radiology certified radiologist now practicing general Diagnostic Imaging at Foothills Hospital.  He is very happy to be a part of the Medical Staff and the Boulder community." //TODO: Ask for a bio that doesn't suck
+"Dr. Helgans loves rising early in the morning to bike up flagstaff road before his busy family starts their day.  He feels lucky to come home sweaty from his early morning rides to his three energetic kids and wife who makes running their home seems so easy.  They all enjoy being out together in nature."
 );
 
 
@@ -75,7 +75,7 @@ var r4 = new Rad(4, "Gustavo L. Isuani, MD",
 "Pennsylvania", //TODO: Pennsylvania isn't a college.
 "Neuroradiology at University of Maryland Medical System",
 "General radiology and neuroradiology.", //TODO: get non-boring aoi's
-"Gus is fluent in Spanish and is learning French. Gus, his wife and daughter enjoy hiking and traveling, but most particularly they love the scenery and weather in Colorado, which reminds them of their hometown of Mendoza, Argentina."
+"Dr. Isuani is fluent in Spanish and is learning French.  He enjoys hiking and traveling with his wife and daughter, but most particularly they all love the scenery and weather in Colorado, which reminds them of their hometown of Mendoza, Argentina."
 );
 
 //#5 Paul D. King, MD
@@ -100,7 +100,7 @@ var r6 = new Rad(6, "Jie Mao, MD",
 "University of Colorado Health Sciences Center",
 "University of Colorado Health Sciences Center in Vascular and Interventional Radiology",
 "Interest are in noninvasive vascular imaging, uterine fibroid embolization for the treatment of symptomatic fibroids and endovascular graft placement for the treatment of abdominal aortic aneurysms, treating cancer in the liver with chemoembolization and performing minimally invasive breast biopsy, and talking with patients about interventional radiology procedures that may serve as an alternative to more invasive treatments.",
-"Dr. Mao is married to Dr. David Gatof, who is a practicing member of Gastroenterology of the Rockies.  They both love the community of Boulder, and enjoy many outdoor activities such as biking, camping, hiking, and skiing.");
+"Dr. Mao is married to Dr. David Gatof, a partner with Gastroenterology of the Rockies.   Together with their two children, they love the community of Boulder and all the outdoor activities offered here.  As a family, they can often be found biking, camping, hiking, and skiing together.");
 
 
 //#7 Jason A. Mehling, MD, MHA
@@ -113,7 +113,7 @@ var r7 = new Rad(7, "Jason A. Mehling, MD, MHA",
 "University of Colorado Health and Science Center",
 "University of Colorado Health Sciences Center in vascular and interventional radiology",
 "All aspects of vascular interventional radiology with special interest in oncologic treatments",
-"I enjoy being a father to my two daughters. I am an avid cyclist (road and mountain). I coach my daughter's hockey team and play on an adult league hockey team. I also enjoy cooking and traveling. I recently went on my first medical mission to Kijabi, Kenya in July 2014. I look forward to joining Boulder Radiologists in January, 2016");
+"Dr. Mehling is so excited about relocating to Boulder from Minnesota.  He is looking forward to exploring everything about Boulder with his wife and two daughters from the bike trails to the hiking trails as well as finding a hockey league for his entire family.  In July 2014, he went on his first medical mission to Kijabi, Kenya in July 2014.");
 
 
 //#8 Roger D. Nichols, MD
@@ -126,7 +126,7 @@ var r8 = new Rad(8, "Roger D. Nichols, MD",
 "University of Nebraska Medical Center",
 "In MRI at Johns Hopkins Hospital",
 "Interests include imagery of the injured athlete, diagnosis and treatment of cardiovascular disease, and oncology care. He is head of MRI at Boulder Community Health.",
-"Dr. Nichols has three wonderful children. His outdoor hobbies include cycling, skiing, and watching his children play soccer.");
+"Dr. Nichols was honored to hold the position of Boulder Community Health Medical Staff President.  The longer he lives in Boulder, the more activities he discovers to enjoy with his three children.  From biking together, to skiing and tennis matches, he finds endless ways to fill his free time.");
 
 
 //#9 Christopher A. Nusser, MD
@@ -139,7 +139,7 @@ var r9 = new Rad(9, "Christopher A. Nusser, MD",
 "University of Oklahoma Health Science Center",
 "United States Airforce Academy fellowship in musculoskeletal radiology and cross-sectional imaging.",
 "He gained addition experience in musculoskeletal radiology with an emphasis in sports injuries. In addition, he has experience and skill in a wide range of diagnostic radiology, including image guided biopsies.",
-"Dr. Nusser is married and has one daughter.  Their love of the outdoors is what kept them in Colorado after separating from the AF.  Hobbies include skiing, mountain biking, fly-fishing, hiking, farming, horses, and music.");
+"Dr. Nusser lives with his wife and daughter on a farm in Longmont.  After moving on from the Air Force, his love of the outdoors kept him in Colorado.  Together with his family, they love time on their farm, caring for their horses and all their animals.  He is an avid mountain biker and skier.");
 
 
 //#10 David A. Oppenheimer, MD
@@ -152,7 +152,7 @@ var r10 = new Rad(10, "David A. Oppenheimer, MD",
 "Stanford University",
 "Research fellowship Stanford University",
 "He is president of Boulder Radiologists, Inc. He practices all facets of diagnostic imaging. He has a special interest in woman's imaging, including mammography, minimally invasive breast biopsy, bone density testing (DEXA), and breast MRI. He is certified by the American College of Radiology, FDA, and the International Society of Clinical Densitometry.  He has served and currently serves on hospital committees and is the medical director of the Imaging Department.",
-"His hobbies include bicycling, skiing, gardening, and watching movies. He is married and has 2 children and has just become a grandfather.");
+"Dr. Oppenheimer has been the devoted president of Boulder Radiologists, Inc. for many years.  He enjoys all the time he spends with his wife and two children and was thrilled to recently welcome his first grandchild into the family.  He loves to take advantage of the wonderful things about living in Boulder, including bicycling, skiing, gardening, as well as relaxing in front of a movie.");
 
 //#11 Nicholas Wickersham, MD
 var r11 = new Rad(11, "Nicholas Wickersham, MD",
