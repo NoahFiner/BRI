@@ -88,7 +88,7 @@ var r5 = new Rad(5, "Paul D. King, MD",
 "Presbyterian Denver Hospital",
 "Neuroradiology fellowship at Strong Memorial Hospital, Rochester NY",
 "Neuroradiology, woman's imaging, and general diagnostic radiology.",
-"Dr. King, outside of work, enjoys travelling and outdoor activities."); //TODO: spam this dude with emails to get his bio
+"Dr King lives happily in his empty nest with wife Clarissa and dog Wesley David. He enjoys outdoor activities, family time and travel.");
 
 //#6 Jie Mao, MD
 var r6 = new Rad(6, "Jie Mao, MD",
