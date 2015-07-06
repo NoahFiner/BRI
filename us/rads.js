@@ -18,11 +18,11 @@ var r0 = new Rad(0, "Matthew H. Blomquist, MD",
 "images/r02.jpg",
 "Wheaton College, Illinois",
 "Boston University School of Medicine",
-"The Graduate Hospital (University of Pennsylvania)",
+"The Graduate Hospital (Philadelphia, PA)",
 "Pennsylvania State University Hospital",
 "Body Imaging fellowship at University of Colorado School of Medicine",
 "General Radiology with an interest in body imaging.",
-"Dr. Blomquist and his wife are blessed with three lovely children. He enjoys family time and the beauty of everything Colorado has to offer.  He tries to fit in time to get on his mountain bike, hike, golf and ski.");
+"Dr. Blomquist and his wife are blessed with three lovely children. He enjoys family time and the beauty of everything Colorado has to offer. In his free time, he enjoys mountain biking, hiking, golfing, and skiing.");
 
 //#1: Charles Bowles, MD
 var r1 = new Rad(1, "Charles Bowles, MD",
@@ -88,7 +88,7 @@ var r5 = new Rad(5, "Paul D. King, MD",
 "Presbyterian Denver Hospital",
 "Neuroradiology fellowship at Strong Memorial Hospital, Rochester NY",
 "Neuroradiology, woman's imaging, and general diagnostic radiology.",
-"Dr King lives happily in his empty nest with wife Clarissa and dog Wesley David. He enjoys outdoor activities, family time and travel.");
+"Dr. King lives happily in his empty nest with wife Clarissa and dog Wesley David. He enjoys outdoor activities, family time and travel.");
 
 //#6 Jie Mao, MD
 var r6 = new Rad(6, "Jie Mao, MD",
@@ -99,7 +99,7 @@ var r6 = new Rad(6, "Jie Mao, MD",
 "University of Colorado Health Sciences Center in general surgery",
 "University of Colorado Health Sciences Center",
 "University of Colorado Health Sciences Center in Vascular and Interventional Radiology",
-"Interest are in noninvasive vascular imaging, uterine fibroid embolization for the treatment of symptomatic fibroids and endovascular graft placement for the treatment of abdominal aortic aneurysms, treating cancer in the liver with chemoembolization and performing minimally invasive breast biopsy, and talking with patients about interventional radiology procedures that may serve as an alternative to more invasive treatments.",
+"Interests are in noninvasive vascular imaging, uterine fibroid embolization for the treatment of symptomatic fibroids and endovascular graft placement for the treatment of abdominal aortic aneurysms, treating cancer in the liver with chemoembolization and performing minimally invasive breast biopsy, and talking with patients about interventional radiology procedures that may serve as an alternative to more invasive treatments.",
 "Dr. Mao is married to Dr. David Gatof, a partner with Gastroenterology of the Rockies.   Together with their two children, they love the community of Boulder and all the outdoor activities offered here.  As a family, they can often be found biking, camping, hiking, and skiing together.");
 
 
