@@ -118,13 +118,19 @@
   text-shadow: 0 0 10px #69C9AE;
 }
 
-#bio {
+#aoi-p {
   display:block;
   margin: 0;
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  opacity: 0.75;
   color: #0B1E19;
   text-shadow: 0 0 3px #D2EFE7;
+}
+
+#bio {
+  font-size: 20px;
+  opacity: 0.75;
 }
 
 .info-p {
