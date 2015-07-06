@@ -20,14 +20,13 @@ var cars = []; //vroom vroom (actually not because this is for the carousel)
 var carSelected = 1;
 
 var selectCar = function(num) {
-  clearInterval(slideShow);
   $('.carousel-text').remove();
   cars[num - 1].add();
   $('.dot').removeClass('selected');
   $('#dot'+num).addClass('selected');
 }
 
-var slideShow = setInterval(function() {nextCar()}, 5000);
+var slideShow = setInterval(function() {nextCar()}, 2000);
 
 var nextCar = function() {
   carSelected += 1;
@@ -39,22 +38,24 @@ var nextCar = function() {
 
 $(document).ready(function() {
   car1 = new Carousel('res/images/car1.jpg', 1);
-  car1.setH1("Lorem");
-  car1.setText("Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit");
+  car1.setH1("BRI");
+  car1.setText("Welcome to the Boulder Radiologists, Inc. website.");
   cars.push(car1);
   car2 = new Carousel('res/images/car2.jpg', 2);
-  car2.setH1("Ipsum");
-  car2.setText("Herp derpsum perp dee derp, mer herderder. Sherp berp derpler, herpem serp tee perper merpus terp dee. Sherpus berps herpsum herpler.");
+  car2.setH1("We Are");
+  car2.setText("Devoted to optimizing your healthcare experience.");
   cars.push(car2);
   car3 = new Carousel('res/images/car3.jpg', 3);
-  car3.setH1("Derp");
-  car3.setText("Terp tee herpsum derpus der nerpy herpderpsmer dee. Merpus derp terp ner sherlamer. Derps herpler serp derpus.");
+  car3.setH1("Quality");
+  car3.setText("We provide the highest level of care.");
   cars.push(car3);
   cars[0].add();
   $('#next-arr').click(function() {
+    clearInterval(slideShow);
     nextCar();
   })
   $('#back-arr').click(function() {
+    clearInterval(slideShow);
     carSelected -= 1;
     if(carSelected === 0) {
       carSelected = 3;
@@ -62,6 +63,7 @@ $(document).ready(function() {
     selectCar(carSelected);
   })
   $('.dot').click(function() {
+    clearInterval(slideShow);
     var id = $(this).attr('id');
     carSelected = Math.floor(id[3]);
     selectCar(carSelected);

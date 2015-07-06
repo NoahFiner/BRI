@@ -22,7 +22,7 @@ var r0 = new Rad(0, "Matthew H. Blomquist, MD",
 "Pennsylvania State University Hospital",
 "Body Imaging fellowship at University of Colorado School of Medicine",
 "General Radiology with an interest in body imaging.",
-"Dr. Blomquist is married to his beautiful wife Ashley and blessed with three lovely children.  He enjoys family time and the beauty of everything Colorado has to offer.  He tries to fit in time to get on his mountain bike, hike, golf and ski.");
+"Dr. Blomquist and his wife are blessed with three lovely children. He enjoys family time and the beauty of everything Colorado has to offer.  He tries to fit in time to get on his mountain bike, hike, golf and ski.");
 
 //#1: Charles Bowles, MD
 var r1 = new Rad(1, "Charles Bowles, MD",
@@ -138,7 +138,7 @@ var r9 = new Rad(9, "Christopher A. Nusser, MD",
 "University of Oklahoma Health Science Center",
 "University of Oklahoma Health Science Center",
 "United States Airforce Academy fellowship in musculoskeletal radiology and cross-sectional imaging.",
-"He gained addition experience in musculoskeletal radiology with an emphasis in sports injuries. In addition, he has experience and skill in a wide range of diagnostic radiology, including image guided biopsies.",
+"He gained additional experience in musculoskeletal radiology with an emphasis in sports injuries. In addition, he has experience and skill in a wide range of diagnostic radiology, including image guided biopsies.",
 "Dr. Nusser lives with his wife and daughter on a farm in Longmont.  After moving on from the Air Force, his love of the outdoors kept him in Colorado.  Together with his family, they love time on their farm, caring for their horses and all their animals.  He is an avid mountain biker and skier.");
 
 
@@ -175,7 +175,6 @@ setInfo = function(num) {
   $('#right-background-image').css("background-image", "url('images/r"+rad.num+"2.jpg')");
   $('#profile-image-main').css('background-image', "url('images/r"+rad.num+"1.jpg')");
   $('#name-title').html(rad.name);
-  $('#bio').html(rad.bio);
   $('#college-p').html("<span class='info-fixed'>College: </span>"+rad.college);
   if(rad.college === "") {
     $('#college-p').html("");
@@ -196,7 +195,22 @@ setInfo = function(num) {
   if(rad.fellowship === "") {
     $('#fellowship-p').html("");
   }
-  $('#aoi-p').html("<span class='info-fixed'>Areas of Interest: </span>"+rad.aoi);
+  $('#bio').html("<span class='info-fixed'>Personal Interests: </span>"+rad.bio);
+  if(rad.bio === "") {
+    $('#bio').html("");
+  }
+  var aoilength = rad.aoi.length;
+  $('#aoi-p').css("font-size", "15px");
+  if(aoilength < 500) {
+    $('#aoi-p').css("font-size", "15px");
+  }
+  if(aoilength < 250) {
+    $('#aoi-p').css("font-size", "25px");
+  }
+  if(aoilength < 100) {
+    $('#aoi-p').css("font-size", "30px");
+  }
+  $('#aoi-p').html(rad.aoi);
   if(rad.aoi === "") {
     $('#aoi-p').html("");
   }
