@@ -1,6 +1,7 @@
 var Carousel = function(url, num) {
   this.url = url;
   this.num = num;
+  $('#image-preloader').css("background-image", "url('"+this.url+"')");
   this.h1 = '';
   this.text = '';
   this.setH1 = function(h1) {

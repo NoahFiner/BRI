@@ -186,6 +186,15 @@ a {
   position:relative;
   background-color: #2d846e;
   border-radius: 20px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.25s;
+  -webkit-transition: box-shadow 0.25s;
+}
+
+#content-left.fixed {
+  margin-top: -420px; /*ha 420 lol*/
+  position:fixed;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 #content-right {
@@ -197,6 +206,7 @@ a {
   float:right;
   display:inline-block;
   position: relative;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 1100px) {
@@ -204,6 +214,9 @@ a {
     font-size: 15px !important;
   }
   .split p {
+    font-size: 13px !important;
+  }
+  .split li  {
     font-size: 13px !important;
   }
   .locations-content .address {
@@ -474,9 +487,14 @@ h3 {
   background-color: #51c7a8;
 }
 
+body {
+
+}
+
 #everything {
   height:100%;
   width:100%;
+  /*background-image: url('../../res/images/background.png');*/
 }
 
 #header-main-outer {
@@ -490,6 +508,15 @@ h3 {
   height:100px;
   background-color: black;
   margin: 0;
+  background-image: url('../../res/images/black-blank.png');
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  transition: background-image 1s;
+  -webkit-transition: background-image 1s;
+}
+
+#header-top-outer.background-img {
+  background-image: url('../../res/images/header-top-outer-background.png') !important;
 }
 
 .header-top-div-sub {
@@ -570,16 +597,17 @@ h3 {
 }
 
 #carousel-image-background {
+  background-color: black;
   background-image: url('res/images/car1.jpg');
   background-position: 50% -150px;
-  background-size: auto 200%;
+  background-size: 100% auto;
   /*transform: scaleY(-1);
   -webkit-transform: scaleY(-1);*/
   height: 500px;
   width: 100%;
   position:absolute;
-  -webkit-transition: background-image 0.2s ease-in-out;
-  transition: background-image 0.2s ease-in-out;
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 
 #carousel-text-background {
@@ -667,6 +695,9 @@ h3 {
   background-color: #14382e;
   position:relative;
   text-align:center;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.5s;
+  -webkit-transition: box-shadow 0.5s;
 }
 
 #fixed-header-top-outer {
@@ -679,6 +710,7 @@ h3 {
 #header-top.fixed {
   position:fixed;
   margin-top: -100px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 #header-top a, p {
@@ -902,4 +934,10 @@ ul {
   color:white;
   font-size:10px;
   margin-right:5px;
+}
+
+#image-preloader {
+  margin: 0;
+  height: 0;
+  width: 0;
 }

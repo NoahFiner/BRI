@@ -15,7 +15,13 @@ $(document).ready(function() {
         // window.scrollTo(0, 75);
       };
     }
-    if(scroll < 75) {
+    if(scroll >= 425) {
+      $('#content-left').addClass("fixed");
+    }
+    if(scroll < 425) {
+      $('#content-left').removeClass("fixed");
+    }
+    if(scroll < 100) {
       if(headerFixed) {
         headerFixed = false;
         $('#header-top').removeClass('fixed');
@@ -24,6 +30,10 @@ $(document).ready(function() {
       }
     }
   })
+
+  setTimeout(function() {
+    $('#header-top-outer').addClass("background-img");
+  }, 250);
 
   $('#about-link, #about-dropdown').hover(function() {
     $('#about-dropdown').addClass('shown');

@@ -10,6 +10,8 @@ var Rad = function(num, name, photo1, photo2, college, medschool, internship, re
   this.fellowship = fellowship;
   this.aoi = aoi;
   this.bio = bio;
+  $("#image-preloader").css("background-image", "url('images/r"+this.num+"1.jpg')");
+  $("#image-preloader").css("background-image", "url('images/r"+this.num+"2.jpg')");
 }
 
 //#0: Matthew H. Blomquist, MD
@@ -133,12 +135,12 @@ var r8 = new Rad(8, "Roger D. Nichols, MD",
 var r9 = new Rad(9, "Christopher A. Nusser, MD",
 "images/r91.jpg",
 "images/r92.jpg",
-"United States Airforce Academy in Garden City, Kansas",
+"United States Airforce Academy in Colorado Springs",
 "University of Kansas Medical School",
-"University of Oklahoma Health Science Center",
+"",
 "University of Oklahoma Health Science Center",
 "United States Airforce Academy fellowship in musculoskeletal radiology and cross-sectional imaging.",
-"He gained additional experience in musculoskeletal radiology with an emphasis in sports injuries. In addition, he has experience and skill in a wide range of diagnostic radiology, including image guided biopsies.",
+"He has additional experience in musculoskeletal radiology with an emphasis in sports injuries, along with experience and skill in a wide range of diagnostic radiology, including image guided biopsies.",
 "Dr. Nusser lives with his wife and daughter on a farm in Longmont.  After moving on from the Air Force, his love of the outdoors kept him in Colorado.  Together with his family, they love time on their farm, caring for their horses and all their animals.  He is an avid mountain biker and skier.");
 
 
