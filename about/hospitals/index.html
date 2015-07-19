@@ -143,71 +143,52 @@ google.maps.event.addDomListener(window, 'load', initialize);
             <li><a href="#foothills"><div class="nav-link"><p>Foothills</p></div></a></li>
             <li><a href="#community"><div class="nav-link"><p>Community</p></div></a></li>
             <li><a href="#medical"><div class="nav-link"><p>Medical Imaging</p></div></a></li>
-            <li><a href="#boulder"><div class="nav-link"><p>Boulder</p></div></a></li>
+            <li><a href="#boulder"><div class="nav-link"><p>Boulder Medical</p></div></a></li>
           </ul>
         </div>
         <div id="content-right" class="locations-content" style="height: auto">
-          <h2 id="foothills">Boulder Community Health Foothills Campus</h2>
-          <div class="split">
-            <div class="split-left split-even">
-              <p class="address">4747 Arapahoe Ave<br>Boulder, CO 80303<br>303-415-7500<br>303-440-2170</p>
-            </div>
-            <div class="split-right split-even">
-              <img src="../../res/images/inspirational/i3.jpg" class="split-even-img locaton-img"/>
+          <div class="split split-fancy" id="foothills" style="background-image: url('../../res/images/hospitals/foothills.jpg')">
+            <div class="split-fancy-gradient-radial">
+              <p class="address"><span class="address-header">Boulder Community Health Foothills Campus</span><br>4747 Arapahoe Ave<br>Boulder, CO 80303<br>303-415-7500<br>303-440-2170</p>
             </div>
           </div>
-          <div class="hr hr-huge margin-top-hr">
+          <div class="hr hr-huge">
             <p>Boulder Community Health Foothills Campus Map</p>
           </div>
           <div class="map-outer">
             <div class="map" id="foothills-map"></div>
           </div>
           <div class="hr margin-bottom-hr"></div>
-          <div class="hr mini-hr margin-hr"></div>
-          <h2 id="community">Community Medical Center</h2>
-          <div class="split">
-            <div class="split-left split-even">
-              <p class="address">1000 W South Boulder Rd<br>Lafayette, CO 80026<br>303-666-4357</p>
-            </div>
-            <div class="split-right split-even">
-              <img src="../../res/images/inspirational/i7.jpg" class="split-even-img locaton-img"/>
+          <div class="split split-fancy" id="community" style="background-image: url('../../res/images/inspirational/i31.jpg')">
+            <div class="split-fancy-gradient-radial">
+              <p class="address"><span class="address-header">Community Medical Center</span><br>1000 W South Boulder Rd<br>Lafayette, CO 80026<br>303-666-4357</p>
             </div>
           </div>
-          <div class="hr hr-huge margin-top-hr">
+          <div class="hr hr-huge">
             <p>Community Medical Center Map</p>
           </div>
           <div class="map-outer">
             <div class="map" id="community-map"></div>
           </div>
           <div class="hr margin-bottom-hr"></div>
-          <div class="hr mini-hr margin-hr"></div>
-          <h2 id="medical">Medical Imaging Center</h2>
-          <div class="split">
-            <div class="split-left split-even">
-              <p class="address">36 Garden Center<br>Broomfield, CO 80020<br>303-938-5238<br>303-466-1234</p>
-            </div>
-            <div class="split-right split-even">
-              <img src="../../res/images/hospitals/mic.jpg" class="split-even-img locaton-img"/>
+          <div class="split split-fancy" id="medical" style="background-image: url('../../res/images/hospitals/mic.jpg')">
+            <div class="split-fancy-gradient-radial">
+              <p class="address"><span class="address-header">Medical Imaging Center</span><br>36 Garden Center<br>Broomfield, CO 80020<br>303-938-5238<br>303-466-1234</p>
             </div>
           </div>
-          <div class="hr hr-huge margin-top-hr">
+          <div class="hr hr-huge">
             <p>Medical Imaging Center Map</p>
           </div>
           <div class="map-outer">
             <div class="map" id="medical-map"></div>
           </div>
           <div class="hr margin-bottom-hr"></div>
-          <div class="hr mini-hr margin-hr"></div>
-          <h2 id="boulder">Boulder Medical Center</h2>
-          <div class="split">
-            <div class="split-left split-even">
-              <p class="address">2750 Broadway<br>Boulder, CO 80304<br>303-440-3000<br>303-440-3029</p>
-            </div>
-            <div class="split-right split-even">
-              <img src="../../res/images/inspirational/i1.jpg" class="split-even-img locaton-img"/>
+          <div class="split split-fancy" id="boulder" style="background-image: url('../../res/images/inspirational/i28.jpg')">
+            <div class="split-fancy-gradient-radial">
+              <p class="address"><span class="address-header">Boulder Medical Center</span><br>2750 Broadway<br>Boulder, CO 80304<br>303-440-3000<br>303-440-3029</p>
             </div>
           </div>
-          <div class="hr hr-huge margin-top-hr">
+          <div class="hr hr-huge">
             <p>Boulder Medical Center Map</p>
           </div>
           <div class="map-outer">
@@ -224,7 +205,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       <div id="footer-middle-div" class="footer-outer-divs">
         <p>Boulder Radiologists Inc. 2015</p>
         <p>Site made by Noah Finer</p>
-        <a href='http://noahfiner.github.io'>Check out some more of his work!</a>
+        <p id="compliment"></p>
       </div>
       <div id="footer-right-div" class="footer-outer-divs">
         <p>Photos taken by Noah Finer</p>
