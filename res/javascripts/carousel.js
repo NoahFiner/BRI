@@ -27,7 +27,7 @@ var selectCar = function(num) {
   $('#dot'+num).addClass('selected');
 }
 
-var slideShow = setInterval(function() {nextCar()}, 2000);
+var slideShow = setInterval(function() {nextCar()}, 3000);
 
 var nextCar = function() {
   carSelected += 1;
