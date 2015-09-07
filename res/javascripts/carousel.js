@@ -50,6 +50,18 @@ $(document).ready(function() {
   car3.setH1("Quality");
   car3.setText("We provide the highest level of care.");
   cars.push(car3);
+  car4 = new Carousel('res/images/car4.jpg', 4);
+  car4.setH1("MIC");
+  car4.setText("This is the MIC hospital you should come here thanks u scrubs");
+  cars.push(car4);
+  car5 = new Carousel('res/images/car5.jpg', 5);
+  car5.setH1("CMC");
+  car5.setText("It's pronounced cuh-mum-mum-inity hawsh-pee-tilt");
+  cars.push(car5);
+  car6 = new Carousel('res/images/car6.jpg', 6);
+  car6.setH1("Cancer");
+  car6.setText("Try not to get this.");
+  cars.push(car6);
   cars[0].add();
   $('#next-arr').click(function() {
     clearInterval(slideShow);

@@ -126,7 +126,7 @@ var r8 = new Rad(8, "Roger D. Nichols, MD",
 "University of Iowa College of Medicine",
 "University of Nebraska Medical Center",
 "University of Nebraska Medical Center",
-"In MRI at Johns Hopkins Hospital",
+"MRI at Johns Hopkins Hospital",
 "Interests include imagery of the injured athlete, diagnosis and treatment of cardiovascular disease, and oncology care. He is head of MRI at Boulder Community Health.",
 "Dr. Nichols was honored to hold the position of Boulder Community Health Medical Staff President.  The longer he lives in Boulder, the more activities he discovers to enjoy with his three children.  From biking together, to skiing and tennis matches, he finds endless ways to fill his free time.");
 
@@ -139,7 +139,7 @@ var r9 = new Rad(9, "Christopher A. Nusser, MD",
 "University of Kansas Medical School",
 "",
 "University of Oklahoma Health Science Center",
-"United States Airforce Academy fellowship in musculoskeletal radiology and cross-sectional imaging.",
+"United States Airforce Academy additional training in musculoskeletal radiology and cross-sectional imaging.",
 "He has additional experience in musculoskeletal radiology with an emphasis in sports injuries, along with experience and skill in a wide range of diagnostic radiology, including image guided biopsies.",
 "Dr. Nusser lives with his wife and daughter on a farm in Longmont.  After moving on from the Air Force, his love of the outdoors kept him in Colorado.  Together with his family, they love time on their farm, caring for their horses and all their animals.  He is an avid mountain biker and skier.");
 
