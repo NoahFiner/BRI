@@ -232,7 +232,7 @@ a {
 
 @media screen and (max-width: 1100px) {
   #left-nav p {
-    font-size: 15px !important;
+    font-size: 12.5px !important;
   }
   .split p, .split span {
     font-size: 13px !important;
