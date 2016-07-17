@@ -6,18 +6,18 @@ var Carousel = function(url, num) {
   this.text = '';
   this.setH1 = function(h1) {
     this.h1 = h1;
-  }
+  };
   this.setText = function(text) {
     this.text = text;
-  }
+  };
   this.add = function() {
     $('#carousel-text-div').append("<h1 class='carousel-text'>"+this.h1+"</h1>");
     $('#carousel-text-div').append("<p class='carousel-text'>"+this.text+"</p>");
     $('#carousel-image-background').css("background-image", "url('"+this.url+"')");
-  }
-}
+  };
+};
 
-var cars = []; //vroom vroom (actually not because this is for the carousel)
+var cars = [];
 var carSelected = 1;
 
 var selectCar = function(num) {
@@ -25,9 +25,9 @@ var selectCar = function(num) {
   cars[num - 1].add();
   $('.dot').removeClass('selected');
   $('#dot'+num).addClass('selected');
-}
+};
 
-var slideShow = setInterval(function() {nextCar()}, 3000);
+var slideShow = setInterval(function() {nextCar();}, 5000);
 
 var nextCar = function() {
   carSelected += 1;
@@ -35,7 +35,7 @@ var nextCar = function() {
     carSelected = 1;
   }
   selectCar(carSelected);
-}
+};
 
 $(document).ready(function() {
   car1 = new Carousel('res/images/car1.jpg', 1);
@@ -66,7 +66,7 @@ $(document).ready(function() {
   $('#next-arr').click(function() {
     clearInterval(slideShow);
     nextCar();
-  })
+  });
   $('#back-arr').click(function() {
     clearInterval(slideShow);
     carSelected -= 1;
@@ -74,12 +74,12 @@ $(document).ready(function() {
       carSelected = 3;
     }
     selectCar(carSelected);
-  })
+  });
   $('.dot').click(function() {
     clearInterval(slideShow);
     var id = $(this).attr('id');
     carSelected = Math.floor(id[3]);
     selectCar(carSelected);
-  })
+  });
   setTimeout(function() {$('#carousel-text-div').removeClass('unactive');}, 500);
-})
+});

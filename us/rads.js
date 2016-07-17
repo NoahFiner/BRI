@@ -1,8 +1,7 @@
-var Rad = function(num, name, photo1, photo2, college, medschool, internship, residency, fellowship, aoi, bio) {
+var Rad = function(num, name, photo1, college, medschool, internship, residency, fellowship, aoi, bio) {
   this.num = num;
   this.name = name;
   this.p1url = photo1;
-  this.p2url = photo2;
   this.college = college;
   this.residency = residency;
   this.medschool = medschool;
@@ -12,12 +11,11 @@ var Rad = function(num, name, photo1, photo2, college, medschool, internship, re
   this.bio = bio;
   $("#image-preloader").css("background-image", "url('images/r"+this.num+"1.jpg')");
   $("#image-preloader").css("background-image", "url('images/r"+this.num+"2.jpg')");
-}
+};
 
 //#0: Matthew H. Blomquist, MD
 var r0 = new Rad(0, "Matthew H. Blomquist, MD",
 "images/r01.jpg",
-"images/r02.jpg",
 "Wheaton College, Illinois",
 "Boston University School of Medicine",
 "The Graduate Hospital (Philadelphia, PA)",
@@ -29,7 +27,6 @@ var r0 = new Rad(0, "Matthew H. Blomquist, MD",
 //#1: Charles Bowles, MD
 var r1 = new Rad(1, "Charles Bowles, MD",
 "images/r11.jpg",
-"images/r12.jpg",
 "Stanford University",
 "Vanderbilt University",
 "",
@@ -42,7 +39,6 @@ var r1 = new Rad(1, "Charles Bowles, MD",
 //#2 Richard Finer, MD
 var r2 = new Rad(2, "Richard Finer, MD",
 "images/r21.jpg",
-"images/r22.jpg",
 "University of Cincinnati",
 "Ohio State University College of Medicine",
 "Alton Ochnser Medical Foundation Hospital in New Orleans",
@@ -56,7 +52,6 @@ var r2 = new Rad(2, "Richard Finer, MD",
 //#3 Robert E. Helgans, MD
 var r3 = new Rad(3, "Robert E. Helgans, MD",
 "images/r31.jpg",
-"images/r32.jpg",
 "University of Pennsylvania",
 "Robert Wood Johnson Medical School",
 "University of Colorado Health Science Center",
@@ -70,7 +65,6 @@ var r3 = new Rad(3, "Robert E. Helgans, MD",
 //#4 Gustavo L. Isuani, MD
 var r4 = new Rad(4, "Gustavo L. Isuani, MD",
 "images/r41.jpg",
-"images/r42.jpg",
 "", //TODO: Get college
 "Baylor College of Medicine",
 "Baylor College of Medicine",
@@ -83,7 +77,6 @@ var r4 = new Rad(4, "Gustavo L. Isuani, MD",
 //#5 Paul D. King, MD
 var r5 = new Rad(5, "Paul D. King, MD",
 "images/r51.jpg",
-"images/r52.jpg",
 "University of Colorado",
 "University of Colorado Health Sciences",
 "Presbyterian Denver Hospital",
@@ -95,7 +88,6 @@ var r5 = new Rad(5, "Paul D. King, MD",
 //#6 Jie Mao, MD
 var r6 = new Rad(6, "Jie Mao, MD",
 "images/r61.jpg",
-"images/r62.jpg",
 "University of Florida",
 "University of Florida",
 "University of Colorado Health Sciences Center in general surgery",
@@ -108,7 +100,6 @@ var r6 = new Rad(6, "Jie Mao, MD",
 //#7 Jason A. Mehling, MD, MHA
 var r7 = new Rad(7, "Jason A. Mehling, MD, MHA",
 "images/r71.jpg",
-"images/r72.jpg",
 "University of Minnesota",
 "University of Minnesota Medical School",
 "University of Minnesota for surgery",
@@ -121,7 +112,6 @@ var r7 = new Rad(7, "Jason A. Mehling, MD, MHA",
 //#8 Roger D. Nichols, MD
 var r8 = new Rad(8, "Roger D. Nichols, MD",
 "images/r81.jpg",
-"images/r82.jpg",
 "University of Iowa",
 "University of Iowa College of Medicine",
 "University of Nebraska Medical Center",
@@ -134,7 +124,6 @@ var r8 = new Rad(8, "Roger D. Nichols, MD",
 //#9 Christopher A. Nusser, MD
 var r9 = new Rad(9, "Christopher A. Nusser, MD",
 "images/r91.jpg",
-"images/r92.jpg",
 "United States Airforce Academy in Colorado Springs",
 "University of Kansas Medical School",
 "",
@@ -147,7 +136,6 @@ var r9 = new Rad(9, "Christopher A. Nusser, MD",
 //#10 David A. Oppenheimer, MD
 var r10 = new Rad(10, "David A. Oppenheimer, MD",
 "images/r101",
-"images/r102",
 "Northwestern University",
 "Northwestern University Medical School",
 "",
@@ -159,7 +147,6 @@ var r10 = new Rad(10, "David A. Oppenheimer, MD",
 //#11 Nicholas Wickersham, MD
 var r11 = new Rad(11, "Nicholas Wickersham, MD",
 "images/r111.jpg",
-"images/r112.jpg",
 "",
 "",
 "",
@@ -174,7 +161,6 @@ var rads = [r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11];
 
 setInfo = function(num) {
   rad = rads[num];
-  $('#right-background-image').css("background-image", "url('images/r"+rad.num+"2.jpg')");
   $('#profile-image-main').css('background-image', "url('images/r"+rad.num+"1.jpg')");
   $('#name-title').html(rad.name);
   $('#college-p').html("<span class='info-fixed'>College: </span>"+rad.college);
@@ -216,7 +202,7 @@ setInfo = function(num) {
   if(rad.aoi === "") {
     $('#aoi-p').html("");
   }
-}
+};
 
 var hidePhotos;
 $(document).ready(function() {
@@ -224,59 +210,23 @@ $(document).ready(function() {
     clearTimeout(hidePhotos);
     $(this).children().addClass("visible");
     var that = this;
-    hidePhotos = setTimeout(function() {$(that).children().removeClass("visible")}, 2000);
+    hidePhotos = setTimeout(function() {$(that).children().removeClass("visible");}, 4000);
   }, function() {
     $(this).children().removeClass("visible");
   });
   $('.nav-link').click(function() {
     $('.nav-link').removeClass("selected");
     $(this).addClass('selected');
-  })
+  });
   $('.left-nav-us').scroll(function() {
     var scrollio = $('.left-nav-us').scrollTop();
     $('.photo-preview').css("margin-top", -100-scrollio+"px");
-  })
+  });
 
   setInfo(0);
 
-  //oh boy, here's clicking each radiologist. :(
-
-  $('#link-0').click(function() {
-    setInfo(0);
+  $(".nav-link").click(function() {
+    var id = $(this).attr("id");
+    setInfo(parseInt(id.substr(5, id.length)));
   });
-  $('#link-1').click(function() {
-    setInfo(1);
-  });
-  $('#link-2').click(function() {
-    setInfo(2);
-  });
-  $('#link-3').click(function() {
-    setInfo(3);
-  });
-  $('#link-4').click(function() {
-    setInfo(4);
-  });
-  $('#link-5').click(function() {
-    setInfo(5);
-  });
-  $('#link-6').click(function() {
-    setInfo(6);
-  });
-  $('#link-7').click(function() {
-    setInfo(7);
-  });
-  $('#link-8').click(function() {
-    setInfo(8);
-  });
-  $('#link-9').click(function() {
-    setInfo(9);
-  });
-  $('#link-10').click(function() {
-    setInfo(10);
-  });
-  $('#link-11').click(function() {
-    setInfo(11);
-  });
-
-
 });

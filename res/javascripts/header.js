@@ -8,15 +8,13 @@ $(document).ready(function() {
   var number = Math.floor(Math.random()*37);
   $( window ).scroll(function() {
     var scroll = $(window).scrollTop();
-    $('#carousel-image-background').css("background-position-y", ((Math.floor(scroll/2))-150)+"px");
-    $('.intro-image-header').css("background-position-y", ((Math.floor(scroll/2))-50)+"px");
     if(scroll >= 100) {
       if(headerFixed === false) {
         headerFixed = true;
         $('#header-top').addClass('fixed');
         // $('#hr1').css("margin-top", "200px");
         // window.scrollTo(0, 75);
-      };
+      }
     }
     if(scroll >= 425) {
       $('#content-left').addClass("fixed");
@@ -32,16 +30,13 @@ $(document).ready(function() {
         // window.scrollTo(0, 100);
       }
     }
-  })
+  });
 
-  setTimeout(function() {
-    $('#header-top-outer').addClass("background-img");
-  }, 250);
   var timeoutthing;
   var timeywimey = function(wat) {
     clearTimeout(timeoutthing);
-    timeoutthing =setTimeout(function() {$('#'+wat+'-dropdown').removeClass("shown")}, 5000);
-  }
+    timeoutthing =setTimeout(function() {$('#'+wat+'-dropdown').removeClass("shown");}, 5000);
+  };
 
   $('#about-link, #about-dropdown').hover(function() {
     $('#about-dropdown').addClass('shown');
@@ -119,11 +114,11 @@ $(document).ready(function() {
   if($('html').is(('.ie6, .ie7, .ie8'))) {
     ieWarning();
   }
-})
+});
 
 var ieWarning = function() {
   alert("It appears you're using an outdated version of Internet Explorer to view this site. Unfortunately, Internet Explorer does not support a lot of this website's features. Try viewing this site on Google Chrome for a better experience.");
-}
+};
 
 
 
