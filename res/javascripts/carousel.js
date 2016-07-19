@@ -81,5 +81,4 @@ $(document).ready(function() {
     carSelected = Math.floor(id[3]);
     selectCar(carSelected);
   });
-  setTimeout(function() {$('#carousel-text-div').removeClass('unactive');}, 500);
 });
