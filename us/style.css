@@ -27,12 +27,9 @@
 }
 
 .photo-preview {
-  display:block;
-  pointer-events:none;
-  margin-left: 200px;
+  pointer-events: none;
   margin-top: -154px;
-  z-index:1000039482579837405927834957808934075;
-  vertical-align:center;
+  z-index: 10000394;
   height: 200px;
   width: 150px;
   opacity: 0;
@@ -41,64 +38,70 @@
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 2px;
-  -webkit-box-shadow: inset 0px 0px 20px 5px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px 0px 20px 5px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 0px 20px 5px rgba(0,0,0,0.75);
   transition: opacity 0.25s;
   -webkit-transition: opacity 0.25s;
 }
 
 #pp-0 {
-  background-image: url('images/r01.jpg');
+  background-image: url('images/r0.jpg');
 }
 #pp-1 {
-  background-image: url('images/r11.jpg');
+  background-image: url('images/r1.jpg');
 }
 #pp-2 {
-  background-image: url('images/r21.jpg');
+  background-image: url('images/r2.jpg');
 }
 #pp-3 {
-  background-image: url('images/r31.jpg');
+  background-image: url('images/r3.jpg');
 }
 #pp-4 {
-  background-image: url('images/r41.jpg');
+  background-image: url('images/r4.jpg');
 }
 #pp-5 {
-  background-image: url('images/r51.jpg');
+  background-image: url('images/r5.jpg');
 }
 #pp-6 {
-  background-image: url('images/r61.jpg');
+  background-image: url('images/r6.jpg');
 }
 #pp-7 {
-  background-image: url('images/r71.jpg');
+  background-image: url('images/r7.jpg');
 }
 #pp-8 {
-  background-image: url('images/r81.jpg');
+  background-image: url('images/r8.jpg');
 }
 #pp-9 {
-  background-image: url('images/r91.jpg');
+  background-image: url('images/r9.jpg');
 }
 #pp-10 {
-  background-image: url('images/r101.jpg');
+  background-image: url('images/r10.jpg');
 }
 #pp-11 {
-  background-image: url('images/r111.jpg');
+  background-image: url('images/r11.jpg');
 }
 
+#photo-previews-outer {
+  position: absolute;
+  width: 200px;
+  top: 200px;
+  left: 200px;
+  height: 300px;
+  overflow: visible;
+
+}
 
 .photo-preview.visible {
   opacity: 1;
 }
 
 .content-right-us {
-  height: 600px !important;
+  padding-top: 0 !important;
+  height: 700px !important;
 }
 
 #right-background-image {
   position:absolute;
   margin:0;
   opacity: 0.5;
-  background-image: url('images/r52.jpg');
   filter: blur(5px);
   -webkit-filter: blur(5px);
 }
@@ -111,21 +114,22 @@
 #name-title {
   font-size: 50px;
   vertical-align: top;
+  margin-left: 5px !important;
   display:block;
   margin: 0;
   font-weight: 800;
   color: #102D25;
-  text-shadow: 0 0 10px #69C9AE;
 }
 
 #aoi-p {
   display:block;
-  margin: 0;
+  margin: 0 !important;
+  margin-left: 5px !important;
   font-weight: 600;
   font-size: 20px;
   opacity: 0.75;
+  padding: 0 !important;
   color: #0B1E19;
-  text-shadow: 0 0 3px #D2EFE7;
 }
 
 #bio {
@@ -157,11 +161,19 @@
 
 #anchor-ignore {
   position:absolute;
-  top: -50px;
   height: 0;
   width: 0;
 }
 
 #right-content {
-  overflow-y: scroll;
+  overflow-y: visible;
+  height: auto;
+}
+
+.rads-split.split-right {
+  border-left: 1px solid #215e4e;
+}
+
+.nav-link {
+  overflow: visible;
 }

@@ -9,13 +9,12 @@ var Rad = function(num, name, photo1, college, medschool, internship, residency,
   this.fellowship = fellowship;
   this.aoi = aoi;
   this.bio = bio;
-  $("#image-preloader").css("background-image", "url('images/r"+this.num+"1.jpg')");
-  $("#image-preloader").css("background-image", "url('images/r"+this.num+"2.jpg')");
+  $("#image-preloader").css("background-image", "url('images/r"+this.num+".jpg')");
 };
 
 //#0: Matthew H. Blomquist, MD
 var r0 = new Rad(0, "Matthew H. Blomquist, MD",
-"images/r01.jpg",
+"images/r0.jpg",
 "Wheaton College, Illinois",
 "Boston University School of Medicine",
 "The Graduate Hospital (Philadelphia, PA)",
@@ -26,7 +25,7 @@ var r0 = new Rad(0, "Matthew H. Blomquist, MD",
 
 //#1: Charles Bowles, MD
 var r1 = new Rad(1, "Charles Bowles, MD",
-"images/r11.jpg",
+"images/r1.jpg",
 "Stanford University",
 "Vanderbilt University",
 "",
@@ -38,7 +37,7 @@ var r1 = new Rad(1, "Charles Bowles, MD",
 
 //#2 Richard Finer, MD
 var r2 = new Rad(2, "Richard Finer, MD",
-"images/r21.jpg",
+"images/r2.jpg",
 "University of Cincinnati",
 "Ohio State University College of Medicine",
 "Alton Ochnser Medical Foundation Hospital in New Orleans",
@@ -51,7 +50,7 @@ var r2 = new Rad(2, "Richard Finer, MD",
 
 //#3 Robert E. Helgans, MD
 var r3 = new Rad(3, "Robert E. Helgans, MD",
-"images/r31.jpg",
+"images/r3.jpg",
 "University of Pennsylvania",
 "Robert Wood Johnson Medical School",
 "University of Colorado Health Science Center",
@@ -64,7 +63,7 @@ var r3 = new Rad(3, "Robert E. Helgans, MD",
 
 //#4 Gustavo L. Isuani, MD
 var r4 = new Rad(4, "Gustavo L. Isuani, MD",
-"images/r41.jpg",
+"images/r4.jpg",
 "", //TODO: Get college
 "Baylor College of Medicine",
 "Baylor College of Medicine",
@@ -76,7 +75,7 @@ var r4 = new Rad(4, "Gustavo L. Isuani, MD",
 
 //#5 Paul D. King, MD
 var r5 = new Rad(5, "Paul D. King, MD",
-"images/r51.jpg",
+"images/r5.jpg",
 "University of Colorado",
 "University of Colorado Health Sciences",
 "Presbyterian Denver Hospital",
@@ -87,7 +86,7 @@ var r5 = new Rad(5, "Paul D. King, MD",
 
 //#6 Jie Mao, MD
 var r6 = new Rad(6, "Jie Mao, MD",
-"images/r61.jpg",
+"images/r6.jpg",
 "University of Florida",
 "University of Florida",
 "University of Colorado Health Sciences Center in general surgery",
@@ -99,7 +98,7 @@ var r6 = new Rad(6, "Jie Mao, MD",
 
 //#7 Jason A. Mehling, MD, MHA
 var r7 = new Rad(7, "Jason A. Mehling, MD, MHA",
-"images/r71.jpg",
+"images/r7.jpg",
 "University of Minnesota",
 "University of Minnesota Medical School",
 "University of Minnesota for surgery",
@@ -111,7 +110,7 @@ var r7 = new Rad(7, "Jason A. Mehling, MD, MHA",
 
 //#8 Roger D. Nichols, MD
 var r8 = new Rad(8, "Roger D. Nichols, MD",
-"images/r81.jpg",
+"images/r8.jpg",
 "University of Iowa",
 "University of Iowa College of Medicine",
 "University of Nebraska Medical Center",
@@ -123,7 +122,7 @@ var r8 = new Rad(8, "Roger D. Nichols, MD",
 
 //#9 Christopher A. Nusser, MD
 var r9 = new Rad(9, "Christopher A. Nusser, MD",
-"images/r91.jpg",
+"images/r9.jpg",
 "United States Airforce Academy in Colorado Springs",
 "University of Kansas Medical School",
 "",
@@ -146,7 +145,7 @@ var r10 = new Rad(10, "David A. Oppenheimer, MD",
 
 //#11 Nicholas Wickersham, MD
 var r11 = new Rad(11, "Nicholas Wickersham, MD",
-"images/r111.jpg",
+"images/r11.jpg",
 "",
 "",
 "",
@@ -161,7 +160,7 @@ var rads = [r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11];
 
 setInfo = function(num) {
   rad = rads[num];
-  $('#profile-image-main').css('background-image', "url('images/r"+rad.num+"1.jpg')");
+  $('#profile-image-main').css('background-image', "url('images/r"+rad.num+".jpg')");
   $('#name-title').html(rad.name);
   $('#college-p').html("<span class='info-fixed'>College: </span>"+rad.college);
   if(rad.college === "") {
@@ -206,13 +205,20 @@ setInfo = function(num) {
 
 var hidePhotos;
 $(document).ready(function() {
+  for(var i = 0; i < 12; i++) {
+    $("#pp-"+i).css("top", ((50*i)-50)+"px");
+  }
   $('.nav-link').hover(function() {
+    var id = $(this).attr("id").toString();
+    var num = id.substr(5);
     clearTimeout(hidePhotos);
-    $(this).children().addClass("visible");
+    $("#pp-"+num).addClass("visible");
     var that = this;
     hidePhotos = setTimeout(function() {$(that).children().removeClass("visible");}, 4000);
   }, function() {
-    $(this).children().removeClass("visible");
+    var id = $(this).attr("id").toString();
+    var num = id.substr(5);
+    $("#pp-"+num).removeClass("visible");
   });
   $('.nav-link').click(function() {
     $('.nav-link').removeClass("selected");

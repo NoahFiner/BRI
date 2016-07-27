@@ -9,7 +9,7 @@
   <script language="javascript" type="text/javascript" src="../res/javascripts/header.js"></script>
   <script language="javascript" type="text/javascript" src="rads.js"></script>
   <script>
-  dots = "../";
+    dots = "../";
   var number = Math.floor(Math.random()*37);
   $('.intro-image-header').css("background-image", "url('"+dots+"res/images/inspirational/i"+number+".jpg')");
   </script>
@@ -97,21 +97,35 @@
       </div>
     </div>
     <div id="content-outer">
+      <div id="photo-previews-outer">
+        <div class="photo-preview" id="pp-0"></div>
+        <div class="photo-preview" id="pp-1"></div>
+        <div class="photo-preview" id="pp-2"></div>
+        <div class="photo-preview" id="pp-3"></div>
+        <div class="photo-preview" id="pp-4"></div>
+        <div class="photo-preview" id="pp-5"></div>
+        <div class="photo-preview" id="pp-6"></div>
+        <div class="photo-preview" id="pp-7"></div>
+        <div class="photo-preview" id="pp-8"></div>
+        <div class="photo-preview" id="pp-9"></div>
+        <div class="photo-preview" id="pp-10"></div>
+        <div class="photo-preview" id="pp-11"></div>
+      </div>
       <div id="content-left" class="content-left-us" style="overflow-x: visible">
         <h3>Radiologists</h3>
-        <ul id="left-nav" class="left-nav-us" style="overflow-x: visible">
-          <li><a href="#anchor-ignore"><div class="nav-link selected" id="link-0"><p>Matthew H. Blomquist, MD</p><div class="photo-preview" id="pp-0"></div></div></a></li>
-          <li><a href="#anchor-ignore"><div class="nav-link" id="link-1"><p>Charles Bowles, MD</p><div class="photo-preview" id="pp-1"></div></div></a></li>
-          <li><a href="#anchor-ignore"><div class="nav-link" id="link-2"><p>Richard Finer, MD</p><div class="photo-preview" id="pp-2"></div></div></a></li>
-          <li><a href="#anchor-ignore"><div class="nav-link" id="link-3"><p>Robert E. Helgans, MD</p><div class="photo-preview" id="pp-3"></div></div></a></li>
-          <li><a href="#anchor-ignore"><div class="nav-link" id="link-4"><p>Gustavo L. Isuani, MD</p><div class="photo-preview" id="pp-4"></div></div></a></li>
-          <li><a href="#anchor-ignore"><div class="nav-link" id="link-5"><p>Paul D. King, MD</p><div class="photo-preview" id="pp-5"></div></div></a></li>
-          <li><a href="#anchor-ignore"><div class="nav-link" id="link-6"><p>Jie Mao, MD</p><div class="photo-preview" id="pp-6"></div></div></a></li>
-          <li><a href="#anchor-ignore"><div class="nav-link" id="link-7"><p>Jason A. Mehling, MD, MHA</p><div class="photo-preview" id="pp-7"></div></div></a></li>
-          <li><a href="#anchor-ignore"><div class="nav-link" id="link-8"><p>Roger D. Nichols, MD</p><div class="photo-preview" id="pp-8"></div></div></a></li>
-          <li><a href="#anchor-ignore"><div class="nav-link" id="link-9"><p>Christopher A. Nusser, MD</p><div class="photo-preview" id="pp-9"></div></div></a></li>
-          <li><a href="#anchor-ignore"><div class="nav-link" id="link-10"><p>David A. Oppenheimer, MD</p><div class="photo-preview" id="pp-10"></div></div></a></li>
-          <li><a href="#anchor-ignore"><div class="nav-link" id="link-11"><p>Nicholas Wickersham, MD</p><div class="photo-preview" id="pp-11"></div></div></a></li>
+        <ul id="left-nav" class="left-nav-us">
+          <li><a href="#anchor-ignore"><div class="nav-link selected" id="link-0"><p>Matthew H. Blomquist, MD</p></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-1"><p>Charles Bowles, MD</p></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-2"><p>Richard Finer, MD</p></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-3"><p>Robert E. Helgans, MD</p></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-4"><p>Gustavo L. Isuani, MD</p></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-5"><p>Paul D. King, MD</p></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-6"><p>Jie Mao, MD</p></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-7"><p>Jason A. Mehling, MD, MHA</p></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-8"><p>Roger D. Nichols, MD</p></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-9"><p>Christopher A. Nusser, MD</p></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-10"><p>David A. Oppenheimer, MD</p></div></a></li>
+          <li><a href="#anchor-ignore"><div class="nav-link" id="link-11"><p>Nicholas Wickersham, MD</p></div></a></li>
         </ul>
       </div>
       <div id="content-right" class="content-right-us">
@@ -119,10 +133,10 @@
         <div id="anchor-ignore"></div>
         <div id="right-content" class="full-background">
           <div class="split" style="width: 90%; margin-left:auto;margin-right:auto;margin-top:10px;display:block">
-            <div class="split-left split-super-minor">
+            <div class="split-left split-super-minor rads-split">
               <div id="profile-image-main" class="background-image split-minor-img"></div>
             </div>
-            <div class="split-right split-super-major">
+            <div class="split-right split-super-major rads-split">
               <h4 id="name-title">Noah S. Finer, MD</h4>
               <div class="hr mini-hr"></div>
               <p id="aoi-p"></p>
@@ -151,7 +165,7 @@
       <div id="footer-right-div" class="footer-outer-divs">
         <p>Photos taken by Noah Finer</p>
         <p>Photos taken courtesy of Boulder and Vail Colorado.</p>
-        <p>This website is best viewed in Google Chrome</p>
+
         <p>Stay healthy and exercise!</p>
     </div>
   </div>
