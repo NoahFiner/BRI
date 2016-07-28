@@ -43,7 +43,7 @@ $(document).ready(function() {
   car1.setText("Welcome to the Boulder Radiologists, Inc. website.");
   cars.push(car1);
   car2 = new Carousel('res/images/car2.jpg', 2);
-  car2.setH1("We Are");
+  car2.setH1("We are");
   car2.setText("Devoted to optimizing your healthcare experience.");
   cars.push(car2);
   car3 = new Carousel('res/images/car3.jpg', 3);
@@ -52,15 +52,15 @@ $(document).ready(function() {
   cars.push(car3);
   car4 = new Carousel('res/images/car4.jpg', 4);
   car4.setH1("MIC");
-  car4.setText("This is the MIC hospital you should come here thanks u scrubs");
+  car4.setText("This is the MIC hospital.");
   cars.push(car4);
   car5 = new Carousel('res/images/car5.jpg', 5);
   car5.setH1("CMC");
-  car5.setText("It's pronounced cuh-mum-mum-inity hawsh-pee-tilt");
+  car5.setText("This is the CMC hospital.");
   cars.push(car5);
   car6 = new Carousel('res/images/car6.jpg', 6);
-  car6.setH1("Cancer");
-  car6.setText("Try not to get this.");
+  car6.setH1("Filler");
+  car6.setText("Lorem ipsum sit dolor emet.");
   cars.push(car6);
   cars[0].add();
   $('#next-arr').click(function() {
