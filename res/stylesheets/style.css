@@ -135,6 +135,7 @@ a {
   margin-left: 20px;
   margin-top: 20px;
   font-weight: 700;
+  white-space: nowrap;
   color: #C1EBE0 !important;
 }
 
@@ -224,7 +225,7 @@ a {
 }
 
 #content-left.fixed {
-  margin-top: -425px;
+  margin-top: -390px;
   position:fixed;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
@@ -284,10 +285,10 @@ a {
   margin-right: 30px;
 }
 
-.split a {
-  color: #0A1F19 !important;
-  font-size: 15px !important;
-  text-shadow: none !important;
+.split:not(.split-fancy) a {
+  color: #0A1F19;
+  font-size: 15px;
+  text-shadow: none;
   font-weight: 400;
   margin: 0;
 }
@@ -650,7 +651,8 @@ body {
 #carousel-image-background {
   background-color: black;
   background-image: url('res/images/car1.jpg');
-  background-position: 50% -150px;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
   /*transform: scaleY(-1);
   -webkit-transform: scaleY(-1);*/
@@ -730,17 +732,17 @@ body {
 
 
 #header-top {
-  width:100%;
-  height:25px;
-  line-height: 25px;
-  vertical-align: middle;
+  width: 100%;
+  height: 50px;
   z-index:100000000000;
   margin: 0;
   background-color: #14382e;
   position:relative;
   text-align:center;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
   transition: box-shadow 0.5s;
   -webkit-transition: box-shadow 0.5s;
@@ -774,13 +776,14 @@ body {
 
 .outer-link {
   margin: 0;
-  height:100%;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: center;
   width:16%;
   white-space: nowrap;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color:transparent;
-  display:inline-block;
   transition: background-color 0.25s;
   -webkit-transition: background-color 0.25s;
 }
@@ -1022,6 +1025,8 @@ p > a {
   left: 50px;
 }
 
+
+
 /*page works on screen sizes bigger than 900px*/
 
 @media screen and (max-width: 1100px) {
@@ -1055,7 +1060,93 @@ p > a {
   }
 }
 
+#hamburger {
+  display: none;
+  position: fixed;
+  z-index: 18888888000;
+  height: 100px;
+  width: 100px;
+  left: calc(100vw - 100px);
+  top: 0;
+  background-color: #14382e;
+  border-bottom-left-radius: 10px;
+  background-image: url('../images/hamburger.png');
+  background-size: 60% 60%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: background-image 0.25s;
+  -webkit-transition: background-image 0.25s;
+  cursor: pointer;
+}
+
+#hamburger.expanded {
+  background-image: url('../images/hamburger-x.png');
+}
+
 @media screen and (max-width: 800px) {
+  #hamburger {
+    display: block;
+  }
+
+  #header-top {
+    position:fixed;
+    margin-top: -100px;
+    height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    transition: height 0.25s, z-index 1ms 0.25s;
+    -webkit-transition: height 0.25s, z-index 1ms 0.25s;
+  }
+
+  #header-top.expanded {
+    height: 100vh;
+    z-index: 1;
+    transition: height 0.25s, z-index 1ms;
+    -webkit-transition: height 0.25s, z-index 1ms;
+  }
+
+  .dropdown {
+    position: relative;
+    display: block;
+    margin-top: -6px;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    pointer-events:none;
+    max-height: 1px;
+    opacity: 0;
+    transition: opacity 0.25s, max-height 0.25s;
+    -webkit-transition: opacity 0.25s, max-height 0.25s;
+  }
+
+  .dropdown.shown {
+    pointer-events: auto;
+    opacity: 1;
+    max-height: 250px;
+  }
+
+  .dropdown-link {
+    white-space: normal;
+  }
+
+  .outer-link {
+    height: auto;
+    position: relative;
+    display: block;
+    white-space: normal;
+    width: 100%;
+    margin: 10px;
+  }
+
+  .logo-main, .header-top-div-main {
+    margin-left: 10px;
+    text-align: left;
+  }
+
+
   #content-left {
     display: none;
   }
@@ -1084,5 +1175,27 @@ p > a {
   }
   .split p {
     width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .intro-image h1 {
+    font-size: 15vw;
+  }
+
+  .split-minor-img {
+    height: 100px !important;
+  }
+
+  #footer-left-div {
+    display: none;
+  }
+
+  .split-right.split-major {
+    margin-left: -50px;
+  }
+
+  #footer-middle-div {
+    width: 45%;
   }
 }

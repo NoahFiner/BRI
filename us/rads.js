@@ -214,7 +214,7 @@ $(document).ready(function() {
     clearTimeout(hidePhotos);
     $("#pp-"+num).addClass("visible");
     var that = this;
-    hidePhotos = setTimeout(function() {$(that).children().removeClass("visible");}, 4000);
+    hidePhotos = setTimeout(function() {$("#pp-"+num).removeClass("visible");}, 4000);
   }, function() {
     var id = $(this).attr("id").toString();
     var num = id.substr(5);

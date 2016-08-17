@@ -2,7 +2,9 @@ headerFixed = false;
 var dots = "../../";
 
 $(document).ready(function() {
-  $('.intro-image-header').css("background-position-y", "-50px");
+  $("#hamburger").click(function() {
+    $("#hamburger, #header-top").toggleClass("expanded");
+  });
   var number = Math.floor(Math.random()*37);
   $( window ).scroll(function() {
     var scroll = $(window).scrollTop();
@@ -14,10 +16,10 @@ $(document).ready(function() {
         // window.scrollTo(0, 75);
       }
     }
-    if(scroll >= 425) {
+    if(scroll >= 400) {
       $('#content-left').addClass("fixed");
     }
-    if(scroll < 425) {
+    if(scroll < 400) {
       $('#content-left').removeClass("fixed");
     }
     if(scroll < 100) {
