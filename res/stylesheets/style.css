@@ -190,6 +190,10 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.landing-text-div > p {
+  line-height: 1.4;
+}
+
 .intro-image-right {
   margin-right:50%;
 }
@@ -291,6 +295,10 @@ a {
   text-shadow: none;
   font-weight: 400;
   margin: 0;
+}
+
+.reduced-list > p {
+  line-height: 1 !important;
 }
 
 .split.no-flex {
