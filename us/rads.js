@@ -23,16 +23,15 @@ var r0 = new Rad(0, "Matthew H. Blomquist, MD",
 "General Radiology with an interest in body imaging.",
 "Dr. Blomquist and his wife are blessed with three lovely children. He enjoys family time and the beauty of everything Colorado has to offer. In his free time, he enjoys mountain biking, hiking, golfing, and skiing.");
 
-//#1: Charles Bowles, MD
-var r1 = new Rad(1, "Charles Bowles, MD",
-"images/r1.jpg",
-"Stanford University",
-"Vanderbilt University",
+var r1 = new Rad(10, "Thomas Fahrbach, MD",
+"images/r10.jpg",
 "",
-"University of Colorado Heatlh Sciences Center",
-"Cardiovascular and interventional radiology at Stanford University Hospital",
-"Interests include treatment of varicose veins (RF, laser), vertebroplasty or kyphoplasty for compression fractures, uterine fibroid embolization, and percutaneous image-guided ablation of tumors.",
-"Dr. Bowles cannot get enough of the outdoors.  He loves spending time with his two kids and on his days off you will most often find him skiing, bicycling, camping, rafting or kayaking. He is a part-time jazz musician who has been advised to keep his day job.");
+"",
+"",
+"",
+"",
+"",
+"");
 
 
 //#2 Richard Finer, MD
@@ -97,15 +96,15 @@ var r6 = new Rad(6, "Jie Mao, MD",
 
 
 //#7 Jason A. Mehling, MD, MHA
-var r7 = new Rad(7, "Jason A. Mehling, MD, MHA",
-"images/r7.jpg",
-"University of Minnesota",
-"University of Minnesota Medical School",
-"University of Minnesota for surgery",
-"University of Colorado Health and Science Center",
-"University of Colorado Health Sciences Center in vascular and interventional radiology",
-"All aspects of vascular interventional radiology with special interest in oncologic treatments",
-"Dr. Mehling is so excited about relocating to Boulder from Minnesota.  He is looking forward to exploring everything about Boulder with his wife and two daughters from the bike trails to the hiking trails as well as finding a hockey league for his entire family.  In July 2014, he went on his first medical mission to Kijabi, Kenya in July 2014.");
+var r7 = new Rad(10, "Maher Salahi, MD",
+"images/r10.jpg",
+"",
+"",
+"",
+"",
+"",
+"",
+"");
 
 
 //#8 Roger D. Nichols, MD
